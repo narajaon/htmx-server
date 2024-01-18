@@ -1,0 +1,22 @@
+{
+  "name": "htmx-server",
+  "version": "1.0.0",
+  "description": "Quick spike of Node + HTMX + tailwindCSS",
+  "main": "index.js",
+  "repository": "git@github.com:narajaon/htmx-server.git",
+  "author": "narajaon <rajaonarisonfabien@yahoo.fr>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "css:build-watch": "npx tailwindcss -i ./public/index.css -o ./public/index.out.css --watch",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "3.1.9",
+    "express": "4.18.2",
+    "htmx.org": "1.9.10"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.1"
+  }
+}
