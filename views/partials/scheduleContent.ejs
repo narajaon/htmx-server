@@ -1,12 +1,12 @@
 <div class="mx-2">
 	<h3>MATIN</h3>
-	<div class="pb-4">
+	<div class="pb-4 flex flex-col sm:block">
 		<% morningSlots.map(function(slot) { %>
 			<%- include('scheduleSlot', { slot: slot }) %>
 		<% }) %>
 	</div>
 	<h3>SOIR</h3>
-	<div>
+	<div class="flex flex-col sm:block">
 		<% eveningSlots.map(function(slot) { %>
 			<%- include('scheduleSlot', { slot: slot }) %>
 		<% }) %>
