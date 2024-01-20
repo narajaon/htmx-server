@@ -8,7 +8,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
 	console.log("/GET /");
-	res.render(__dirname + "/views/index", { body: "EJS" });
+	res.render(__dirname + "/views/pages/home", { body: "EJS" });
 });
 
 app.get("/test", (req, res) => {
