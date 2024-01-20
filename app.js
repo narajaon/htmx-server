@@ -7,13 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-	console.log("/GET /");
-	res.render(__dirname + "/views/pages/home", { body: "EJS" });
-});
-
-app.get("/test", (req, res) => {
-	console.log("/GET /test");
-	res.render(__dirname + "/views/body", { body: "Clicked" });
+	res.render(__dirname + "/views/pages/home");
 });
 
 // Start the server
