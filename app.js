@@ -11,17 +11,10 @@ app.get("/", (_, res) => {
 	res.render(__dirname + "/views/pages/home");
 });
 
-app.get("/schedule", (_, res) => {
+app.get("/schedule", (req, res) => {
 	res.render(__dirname + "/views/pages/schedule", {
 		months,
-		currentDay: undefined,
-	});
-});
-
-app.post("/currentDay", (_, res) => {
-	res.render(__dirname + "/views/partials/scheduleHeader", {
-		months,
-		currentDay: req.query.value,
+		currentDay: req.query.currentDay,
 	});
 });
 
