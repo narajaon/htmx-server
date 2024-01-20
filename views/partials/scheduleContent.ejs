@@ -1,0 +1,14 @@
+<div class="mx-2">
+	<h3>MATIN</h3>
+	<div class="pb-4">
+		<% morningSlots.map(function(slot) { %>
+			<%- include('scheduleSlot', { slot: slot }) %>
+		<% }) %>
+	</div>
+	<h3>SOIR</h3>
+	<div>
+		<% eveningSlots.map(function(slot) { %>
+			<%- include('scheduleSlot', { slot: slot }) %>
+		<% }) %>
+	</div>
+</div>

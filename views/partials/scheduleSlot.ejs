@@ -1,0 +1,8 @@
+<button class='text-start border-solid border-2 border-black p-4 m-2'>
+	<div class='flex justify-between w-full min-w-[280px]'>
+		<div><%= slot.startTime + ' - ' + slot.endTime %></div>
+		<div><%= slot.currentNbAttendees + ' / ' + slot.maxNbAttendees %></div>
+	</div>
+	<p><b><%= slot.type %></b> (<%= slot.location %>)</p>
+	<p><%= slot.shortDescription %></p>
+</button>

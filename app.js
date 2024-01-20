@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const { mockMonths: months } = require("./mocks");
+const { mockMonths: months, mockSlots: slots } = require("./mocks");
 
 app.set("view engine", "ejs");
 
@@ -17,6 +17,8 @@ app.get("/schedule", (req, res) => {
 	res.render(__dirname + "/views/pages/schedule", {
 		months,
 		currentDay: req.query.currentDay,
+		morningSlots: slots,
+		eveningSlots: slots,
 		head: { title: "schedule page" },
 	});
 });
