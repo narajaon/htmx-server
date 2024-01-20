@@ -53,3 +53,27 @@ Conclusion:
     - nice tooling and proven tech
     - can easily do shitty code with unless server components ?
     - easier to do client-side specific computations (animations, etc.)
+
+
+# UX ideas
+## Schedule
+- slot multiselection
+    - select multiple slots accross multiple days
+    - store them in the localStorage
+    - a big CTA appears to validate
+    - a list of selected slot appears before validating
+    - validate choices when done
+- scroll to top button on mobile
+- manage free training slots (whole day / half a day)
+    - extra slot at the end of morning / evening slots ?
+
+
+# MVP scope
+- Schedule
+    - As a user, I can see a schedule with time slots of sports sessions
+        - When I click on a slot
+            - The selected slot is highlighted
+            - I can click on other slots
+            - A sticky confirmation / cancel buttons appears with the number of selected slots
+            - When I click on the confirm button
+                - A confirmation popup appears
