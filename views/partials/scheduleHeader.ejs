@@ -4,7 +4,15 @@
 		<h2 class="uppercase font-bold"><%= month.label %></h2>
 		<div class="flex">
 			<% month.days.map(function(day) { %>
-			<%- include('scheduleDay', { day: day }) %>
+			<a
+					href="/schedule?currentDay=<%= day.number %>"
+					class="scheduler-day py-2 px-4 mx-1 flex flex-col items-center
+						<%= (day.label == 'sa' || day.label == 'di') && 'text-red' %>
+						<%= day.number == currentDay && 'scheduler-day__current' %>
+					">
+					<p><%= day.label %></p>
+					<p class="font-bold"><%= day.number %></p>
+			</a>
 			<% }) %>
 		</div>
 	</div>
