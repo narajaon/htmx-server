@@ -14,17 +14,7 @@
 				content="width=device-width, initial-scale=1"
 				/>
 	</head>
-	<body id="body-test">
-		<div>
-			<div class="font-bold">TEST</div>
-			<%- include('body') %>
-			<button
-					hx-get="/test"
-					hx-target="#body-component"
-					hx-swap="outerHTML"
-					>
-					Click Me!
-			</button>
-		</div>
+	<body class="bg-white">
+			<%- include('partials/navBar') %>
 	</body>
 </html>
