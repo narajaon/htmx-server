@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scheduler-day{
+	border: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+.scheduler-day:hover {
+	border-bottom: 3px solid red;
+	border-radius: none;
+}
+
+.scheduler-day__current {
+	border: 3px solid black;
+	border-radius: 10px;
+}
