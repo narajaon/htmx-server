@@ -1,0 +1,20 @@
+<div>
+	<%- include('blockTitle', { title: 'Nos tarifs' }) %>
+	<div class="flex lg:flex lg:justify-around space-y-3 lg:space-y-0 mx-3 lg:mx-0">
+		<%- include('pricingCard', {
+			price: 80,
+			title: 'Adventurer Pack',
+			isHighLighted: false
+		}) %>
+		<%- include('pricingCard', {
+			price: 120,
+			title: 'Warrior Pack',
+			isHighLighted: true
+		}) %>
+		<%- include('pricingCard', {
+			price: 90,
+			title: 'Zen Pack',
+			isHighLighted: false
+		}) %>
+	</div>
+</div>

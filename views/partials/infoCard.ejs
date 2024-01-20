@@ -8,6 +8,10 @@
 			placeholder="blur"
 			/>
 			<div class="absolute bottom-2 flex flex-col w-full h-full items-center justify-center">
+				<%- include('cardTitle', {
+					title: title,
+					wrapperClassName: 'text-3xl ' + titleClassName
+				}) %>
 				<% if (cta) { %>
 				<div>
 					<%- include('CTAButton', {
