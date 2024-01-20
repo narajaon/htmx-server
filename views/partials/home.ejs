@@ -4,23 +4,9 @@
 			pictureUrl: 'jumping-hres.jpeg',
 			title: 'Ready, Set, Boxe !',
 			cta: 'Je decouvre',
-			className: 'max-h-[500px] lg:border-b-2 border-black',
-			width: 700,
-			height: 700
+			wrapperClassName: 'max-h-[500px] lg:border-b-2 border-black',
 		}) %>
-		<div>HERO INFO CARD</div>
-		<div>
-			<%# <StandaloneTitle title="Nos disciplines" /> #%>
-			<div>TITLE </div>
-			<div class="lg:flex">
-				<div>INFO CARD </div>
-				<div>INFO CARD </div>
-				<div>INFO CARD </div>
-				<%# <InfoCard src={boxing} title="Le noble art" /> #%>
-				<%# <InfoCard src={kneeUp} title="Le Muay Thai" /> #%>
-				<%# <InfoCard src={pushup} title="HIIT me if you can !" /> #%>
-			</div>
-		</div>
+		<%- include('classesBlock') %>
 		<div>
 			<div>TITLE </div>
 			<%# <StandaloneTitle title="Nos tarifs" /> #%>

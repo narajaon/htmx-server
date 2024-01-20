@@ -1,0 +1,32 @@
+<div>
+	<%- include('blockTitle', { title: 'Nos disciplines' }) %>
+	<div class="lg:flex">
+		<%- include('infoCard', {
+			title: 'Le noble art',
+			pictureUrl: 'man-boxing.png',
+			width: 700,
+			height: 700,
+		  cta: false,
+		  titleClassName: '',
+		  wrapperClassName: ''
+		})%>
+		<%- include('infoCard', {
+			title: 'Le Muay Thai',
+			pictureUrl: 'knee-up-muay.png',
+			width: 700,
+			height: 700,
+		  cta: false,
+		  titleClassName: '',
+		  wrapperClassName: ''
+		}) %>
+		<%- include('infoCard', {
+			title: 'HIIT me if you can !',
+			pictureUrl: 'woman-pushups.png',
+			width: 700,
+			height: 700,
+		  cta: false,
+		  titleClassName: '',
+		  wrapperClassName: ''
+		}) %>
+	</div>
+</div>
