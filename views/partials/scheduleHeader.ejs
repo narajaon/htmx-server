@@ -1,7 +1,12 @@
-<div class="flex overflow-scroll">
+<div class="flex overflow-scroll" id="schedule-header">
 	<% months.map(function(month) { %>
-		<div class="px-2">
-			<h2 class="uppercase font-bold"><%= month.label %></h2>
+	<div class="px-2">
+		<h2 class="uppercase font-bold"><%= month.label %></h2>
+		<div class="flex">
+			<% month.days.map(function(day) { %>
+			<%- include('scheduleDay', { day: day }) %>
+			<% }) %>
 		</div>
+	</div>
 	<% }) %>
 </div>

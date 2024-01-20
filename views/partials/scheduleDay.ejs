@@ -1,0 +1,11 @@
+<button
+		hx-post="/currentDay?value=<%= day.number %>"
+		hx-target="#schedule-header"
+		hx-trigger="click"
+		class="scheduler-day py-2 px-4 mx-1 flex flex-col items-center
+			<%= (day.label == 'sa' || day.label == 'di') && 'text-red' %>
+			<%= day.number == currentDay && 'scheduler-day__current' %>
+		">
+		<p><%= day.label %></p>
+		<p class="font-bold"><%= day.number %></p>
+</button>

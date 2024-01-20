@@ -7,13 +7,21 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
 	res.render(__dirname + "/views/pages/home");
 });
 
-app.get("/schedule", (req, res) => {
+app.get("/schedule", (_, res) => {
 	res.render(__dirname + "/views/pages/schedule", {
 		months,
+		currentDay: undefined,
+	});
+});
+
+app.post("/currentDay", (_, res) => {
+	res.render(__dirname + "/views/partials/scheduleHeader", {
+		months,
+		currentDay: req.query.value,
 	});
 });
 
